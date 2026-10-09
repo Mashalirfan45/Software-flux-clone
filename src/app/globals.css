@@ -24,3 +24,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Hero image: neeche-left se upar-right ki taraf slow move, phir wapas */
+@keyframes heroFloat {
+  0%   { transform: translate(-28px, 24px); }
+  100% { transform: translate(28px, -26px); }
+}
+
+/* Yellow dots: image se ulti direction mein move */
+@keyframes dotsFloat {
+  0%   { transform: translate(22px, 22px); }
+  100% { transform: translate(-26px, -28px); }
+}
+
+.animate-hero-float {
+  animation: heroFloat 8s ease-in-out infinite alternate;
+}
+
+.animate-dots-float {
+  animation: dotsFloat 6s ease-in-out infinite alternate;
+}
