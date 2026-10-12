@@ -1,16 +1,14 @@
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import "./globals.css";
-
-export const metadata = {
-  title: "Software Flux Solutions",
-  description: "Software development and IT solutions",
-};
+import Navbar from "./components/Layout/Navbar";
+import Footer from "./components/Layout/Footer";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,20 +1,17 @@
-import Navbar from "./components/Layout/Navbar";
-import Footer from "./components/Layout/Footer";
-import Hero from "./Home/Hero";
-import Services from "./Home/Services";
-import WhyDifferent from "./Home/WhyDifferent";
-import TrustedCompanies from "./Home/TrustedCompanies";
-import BetterSaaS from "./Home/BetterSaaS";
-import Testimonials from "./Home/Testimonials";
-import OurProjects from "./Home/OurProjects";
-import WhyChooseUs from "./Home/WhyChooseUs";
-import OurBlogs from "./Home/OurBlogs";
-import LetsBuild from "./Home/LetsBuild";
+import Hero from "./home/Hero";
+import Services from "./home/Services";
+import WhyDifferent from "./home/WhyDifferent";
+import TrustedCompanies from "./home/TrustedCompanies";
+import BetterSaaS from "./components/Reusable_Components/BetterSaaS";
+import Testimonials from "./home/Testimonials";
+import OurProjects from "./home/OurProjects";
+import WhyChooseUs from "./home/WhyChooseUs";
+import OurBlogs from "./home/OurBlogs";
+import LetsBuild from "./home/LetsBuild";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       <Services />
       <WhyDifferent />
@@ -25,7 +22,7 @@ export default function Home() {
       <WhyChooseUs />
       <OurBlogs />
       <LetsBuild />
-      <Footer />
+     
     </>
   );
 }
