@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Phone, MapPin, Mail, ChevronDown } from "lucide-react";
+import { Phone, MapPin, Mail, ChevronDown } from "lucide-react"; //Phone, Map, Mail aur dropdown arrow ke icons.
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import CustomButton from "../components/Reusable_Components/CustomButton";

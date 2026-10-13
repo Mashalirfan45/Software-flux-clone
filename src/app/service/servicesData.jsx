@@ -419,7 +419,7 @@ export const services = [
   buildService(
     "website-development",
     "Website Development",
-    "/images/why-different.png",
+    "/images/WD.webp",
     websiteContent
   ),
   buildService(
@@ -431,7 +431,7 @@ export const services = [
   buildService(
     "graphic-design",
     "Graphic Design",
-    "/images/GRAPHIC_DESIGN.webp",
+    "/images/UI_UX.webp",
     graphicContent
   ),
   buildService(
