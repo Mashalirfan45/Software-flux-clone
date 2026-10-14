@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
-  { label: "SaaS Development", href: "/services/saas-development" },
-  { label: "Mobile App Development", href: "/services/mobile-app-development" },
-  { label: "Website Development", href: "/services/website-development" },
-  { label: "UIUX & Graphic Design", href: "/services/uiux-graphic-design" },
-  { label: "SEO & Digital Marketing", href: "/services/seo-digital-marketing" },
+  { label: "SaaS Development", href: "/service/saas-development" },
+  { label: "Mobile App Development", href: "/service/mobile-app-development" },
+  { label: "Website Development", href: "/service/website-development" },
+  { label: "UIUX & Graphic Design", href: "/service/ui-ux-graphic-design" },
+  { label: "SEO & Digital Marketing", href: "/service/seo-digital-marketing" },
 ];
 
 const usefulLinks = [
@@ -58,7 +58,7 @@ const PhoneIcon = () => (
 );
 
 export default function Footer({
-  logo = "/images/logo.png.svg",
+  logo = "/images/logo.png.svg", // apne logo ka path (Navbar wala logo)
   emails = ["kamran@softflux.co", "hr@softflux.co"],
   address = "Office 1, 1st floor Shahzaib Basti barrier wah cantt Pakistan 21, Wah Cantt, 47040, Pakistan",
   phones = ["+92(328)9777009", "+442038072184"],
