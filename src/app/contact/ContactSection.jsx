@@ -92,22 +92,51 @@ export default function ContactSection() {
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("sending");
-    try {
-      const res = await fetch("/api/contact", {
+ 
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setStatus("sending");
+
+  try {
+    const res = await fetch(
+      "https://formsubmit.co/ajax/mashal4567869@gmail.com",
+      {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-      if (!res.ok) throw new Error("Failed");
-      setStatus("success");
-      setForm({ name: "", email: "", phone: "", service: services[0], message: "" });
-    } catch {
-      setStatus("error");
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          service: form.service,
+          message: form.message,
+          _subject: "New Contact Form Submission - Software Flux",
+        }),
+      }
+    );
+
+    const data = await res.json();
+
+    if (!res.ok || data.success !== "true") {
+      throw new Error("Message could not be sent");
     }
-  };
+
+    setStatus("success");
+
+    setForm({
+      name: "",
+      email: "",
+      phone: "",
+      service: services[0],
+      message: "",
+    });
+  } catch (error) {
+    setStatus("error");
+  }
+};
+
 
   return (
     <section className="bg-white pt-24">
