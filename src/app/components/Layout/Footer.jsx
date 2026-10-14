@@ -5,7 +5,8 @@ const services = [
   { label: "SaaS Development", href: "/service/saas-development" },
   { label: "Mobile App Development", href: "/service/mobile-app-development" },
   { label: "Website Development", href: "/service/website-development" },
-  { label: "UIUX & Graphic Design", href: "/service/ui-ux-graphic-design" },
+  { label: "UI/UX ", href: "/service/ui-ux-design" },
+  { label: " Graphic Design", href: "/service/graphic-design" },
   { label: "SEO & Digital Marketing", href: "/service/seo-digital-marketing" },
 ];
 
